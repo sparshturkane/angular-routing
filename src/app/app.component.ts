@@ -5,6 +5,20 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+// class
 export class AppComponent {
-  title = 'angular-routing';
+
+  // variable
+  title: string = 'angular-routinggg';
+
+  // constructor
+  constructor() {
+    console.log('inside consturctor');
+  }
+
+  // lifecycle hooks
+  ngOnInit() {
+    console.log('inside ngOnInit');
+  }
 }
